@@ -9,7 +9,13 @@ print (f"{mountain}, formerly\nknown as {nickname}\nis {str(elevation)} above se
 # %% Task 2
 
 #Assign variables
-dataFolder = "W:\859_data\tri_state"
+dataFolder = "W:\859_data\\tri_state"
 dataList = ["roads.shp", "road_types.dbf", "naip_imagery.tif"]
 userItem = "streams.shp"
 
+#Add userItem to dataList
+dataList.append(userItem)
+
+#Iterate through dataList
+for x in dataList:
+    print(f"{dataFolder}\{x}")
