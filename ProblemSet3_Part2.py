@@ -69,7 +69,7 @@ mmsi_lat = {}
 mmsi_long = {}
 
 #Iterate through lines
-for line in loit_line_list[1]:
+for line in loit_line_list[1:]:
     #split string into a list of data items
     loit_data = line.split(",")
     #assign variables
